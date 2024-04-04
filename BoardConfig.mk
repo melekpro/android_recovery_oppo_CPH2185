@@ -147,6 +147,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_OZIP_DECRYPT_KEY := 0000
+ENABLE_SCHEDBOOST := true
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
@@ -155,3 +156,16 @@ TW_INCLUDE_REPACKTOOLS := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# SHRP 
+SHRP_DEVICE_CODE := OP4BFB
+SHRP_PATH := device/OPPO/CPH2185
+SHRP_MAINTAINER := melek saidani
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_FLASH := 0
+SHRP_REC_TYPE := Normal
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_DARK := true
