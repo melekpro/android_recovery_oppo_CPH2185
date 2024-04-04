@@ -26,13 +26,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+
 PRODUCT_DEVICE := CPH2185
 PRODUCT_NAME := omni_CPH2185
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := CPH2185
 PRODUCT_MANUFACTURER := oppo
-
-PRODUCT_SHIPPING_API_LEVEL := 30
 
 # HACK: Set vendor patch level and enable Treble
 PRODUCT_PROPERTY_OVERRIDES += \
