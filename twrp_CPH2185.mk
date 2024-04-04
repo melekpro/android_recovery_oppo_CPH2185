@@ -16,22 +16,23 @@
 # limitations under the License.
 #
 
-# Dynamic
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := CPH2185
-PRODUCT_NAME := omni_CPH2185
+PRODUCT_NAME := twrp_CPH2185
 PRODUCT_BRAND := oppo
 PRODUCT_MODEL := CPH2185
 PRODUCT_MANUFACTURER := oppo
+
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Dynamic
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # HACK: Set vendor patch level and enable Treble
 PRODUCT_PROPERTY_OVERRIDES += \
