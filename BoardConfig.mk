@@ -160,7 +160,6 @@ TARGET_USES_LOGD := true
 # SHRP 
 SHRP_DEVICE_CODE := OP4BFB
 SHRP_PATH := device/OPPO/CPH2185
-SHRP_MAINTAINER := melek saidani
 SHRP_DEVICE_TYPE := A/B
 SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
 SHRP_FLASH := 0
